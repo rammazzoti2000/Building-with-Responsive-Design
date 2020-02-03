@@ -452,3 +452,38 @@ button .fa-search:hover {
 .cards-bottom span {
   color: lightgray;
 }
+
+.articles {
+  width: 85%;
+  margin: 100px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.article-container {
+  width: 30%;
+}
+
+.art-top {
+  background: center url("../assets/articlesimage796x418.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  height: 250px;
+}
+
+.art-top div {
+  position: absolute;
+  color: white;
+  height: 30%;
+  width: 100%;
+  top: auto;
+  bottom: 0;
+  padding-bottom: 20px;
+}
+
+.art-top div a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+}
