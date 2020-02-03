@@ -82,6 +82,7 @@ select {
 /* Styling start */
 html {
   font-size: 65%;
+  font-family: Avalon, sans-serif;
 }
 
 .top-nav {
@@ -216,12 +217,17 @@ button .fa-search:hover {
   top: 0;
 }
 
+.right:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
 .main-left-header {
   position: absolute;
   top: auto;
   left: 13px;
   right: 23px;
   bottom: 3%;
+  cursor: pointer;
 }
 
 .date-stamp {
@@ -254,6 +260,7 @@ button .fa-search:hover {
   left: 10px;
   right: auto;
   top: auto;
+  cursor: pointer;
 }
 
 .main-header h5 {
@@ -285,7 +292,15 @@ button .fa-search:hover {
 
 .latest-news {
   width: 85%;
-  margin: 10% auto;
+  margin: 8% auto;
+}
+
+.latest-news h2 .fa-chevron-right {
+  font-size: 2rem;
+}
+
+.latest-news h2 a:hover {
+  color: black;
 }
 
 .latest-news-container {
@@ -316,6 +331,11 @@ button .fa-search:hover {
   font-size: 1.6rem;
 }
 
+.latest-news h4 a:hover {
+  color: rgb(255, 68, 34);
+  border-bottom: 1px solid rgba(255, 68, 34, 0.3);
+}
+
 .news-img img {
   margin-bottom: 5px;
 }
@@ -327,6 +347,10 @@ button .fa-search:hover {
   font-size: 1.25rem;
 }
 
+.news-img a:hover {
+  color: black;
+}
+
 .funding {
   width: 85%;
   margin: 5px auto;
@@ -336,6 +360,11 @@ button .fa-search:hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-items: baseline;
+}
+
+.funding-header a:hover {
+  color: black;
 }
 
 .funding-header ul li  {
@@ -344,9 +373,13 @@ button .fa-search:hover {
 
 .funding-header h2 a {
   color: rgb(255, 68, 34);
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   font-weight: 700;
   text-decoration: none;
+}
+
+.funding-header h2 .fa-chevron-right {
+  font-size: 2rem;
 }
 
 .funding-header ul li a {
@@ -387,36 +420,41 @@ button .fa-search:hover {
   height: 60px;
   top: 10px;
   left: 10px;
+  z-index: 998;
 }
 
 .cards-top {
   width: 100%;
+  cursor: pointer;
 }
 
 .card-p {
-  text-align: center;
   height: 40px;
 }
 
 .card-p p {
   color: white;
   padding-top: 10px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
+  padding: 10.6px 16px 10.6px 84px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-ps {
-  text-align: center;
   height: 60px;
-  background-color: rgba(255, 255, 255, 0.8);7
-  
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10.6px 16px 10.6px 84px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;  
 }
 
 .card-ps p {
   font-size: 1.3rem;
-  padding-top: 10px;
   font-weight: 700;
-  padding-left: 15px;
 }
 
 .card-ps span {
@@ -430,10 +468,19 @@ button .fa-search:hover {
   border-bottom: 1px solid rgb(255, 68, 34);
 }
 
+.cards-middle .icon {
+  font-size: 1.6rem;
+}
+
 .cards-middle a {
   text-decoration: none;
   color: gray;
   font-size: 1.3rem;
+  padding-left: 5px;
+}
+
+.cards-middle a:hover {
+  color: black;
 }
 
 .cards-bottom {
@@ -455,35 +502,222 @@ button .fa-search:hover {
 
 .articles {
   width: 85%;
-  margin: 100px auto;
+  margin: 80px auto 35px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
+}
+
+.articles h2 {
+  font-size: 2.5rem;
+  color: rgb(255, 68, 34);
+  cursor: pointer;
+}
+
+.articles h2 .fa-chevron-right {
+  font-size: 1.7rem;
+}
+
+.articles h2:hover {
+  color: black;
 }
 
 .article-container {
-  width: 30%;
+  width: 31%;
+  margin-bottom: 30px;
+}
+
+.art-content {
+  margin-top: 10px;
 }
 
 .art-top {
-  background: center url("../assets/articlesimage796x418.jpg") no-repeat;
+  background: center url("../assets/twitter-stock.jpg") no-repeat;
   background-size: 100% 100%;
   position: relative;
   height: 250px;
+  z-index: 997;
 }
 
-.art-top div {
-  position: absolute;
+.cover-art {
+  position: relative;
   color: white;
-  height: 30%;
+  height: 100%;
   width: 100%;
   top: auto;
   bottom: 0;
   padding-bottom: 20px;
+  background: rgba(0, 0, 0, 0.5);
 }
 
-.art-top div a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.4rem;
+.overlay-text {
+  position: absolute;
+  top: auto;
+  bottom: 10px;
+  left: 10px;
+  right: 0;
 }
+
+.overlay-text h4 a {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 1.13;
+}
+
+.overlay-text h4 a:hover {
+  border-bottom: 0.5px solid gray;
+}
+
+.overlay-text p {
+  line-height: 2.5;
+}
+
+.overlay-text p a {
+  color: lightgray;
+  text-decoration: none;
+}
+
+.overlay-text p a:hover {
+  color: white;
+}
+
+.overlay-text span {
+  color: lightgray;
+}
+
+.art-middle {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-top: 3px;
+  background-color: rgba(255, 68, 34, 0.1);
+}
+.art-middle > div {
+  flex: 1;
+  padding: 10px 14px 0;
+}
+
+.art-middle p {
+  color: #f42;
+  font-size: 1.3rem;
+  line-height: 0;
+}
+
+.art-middle h6 > a {
+  color: #f42;
+  text-decoration: none;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.art-middle h6 > a:hover {
+  border-bottom: 0.5px solid rgba(255, 68, 34, 0.5);
+}
+
+.art-middle img {
+  width: 96px;
+  height: 85px;
+}
+
+.two-childs {
+  display: flex;
+  flex-flow: inherit;
+  width: 100%;
+  width: -webkit-fill-available;
+}
+
+.two-childs .article-container:last-child {
+  margin-left: 35px;
+}
+
+.art-bottom ul {
+  padding-left: 16px
+}
+
+.art-bottom ul li {
+  border-bottom: 1px solid lightgray;
+  padding: 6px 0;
+  color: red;
+  font-size: 1.3rem;
+}
+
+.art-bottom a {
+  text-decoration: none;
+  color: #555555;
+}
+
+.art-bottom a:hover {
+  color: black;
+}
+
+.deals {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.deals-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.deals-header a {
+  text-decoration: none;
+  color: rgb(255, 68, 34);
+  font-size: 2.4rem;
+}
+
+.deals-header a:hover {
+  color: black;
+}
+
+.deals-header .fa-chevron-right {
+  font-size: 1.6rem;
+}
+
+.deals-header p > a{
+  font-size: 1.7rem;
+}
+
+.deals-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.deals-cards {
+  width: 22%;
+  margin-bottom: 20px;
+}
+
+.cards-header {
+  padding-top: 8px;
+}
+
+.cards-header a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.cards-header a:hover {
+  color: rgb(255, 68, 34);
+  border-bottom: 1px solid rgba(255, 68, 34, 0.3);
+}
+
+.cards-header span {
+  text-decoration: line-through;
+  font-size: 1.2rem;
+  color: gray
+}
+
+.cards-header p {
+  font-size: 1.5rem;
+  color: #555555;
+}
+
