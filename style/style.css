@@ -114,8 +114,7 @@ html {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  height: 48px;
- 
+  height: 48px; 
   background-color: white;
 }
 
@@ -147,9 +146,10 @@ html {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  z-index: 999;
 }
 
- .bottom-container .banner {
+.bottom-container .banner {
   background-color: rgb(255, 221, 51);
   width: 100%;
   height: 30px;
@@ -185,6 +185,7 @@ button .fa-search:hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  margin: 0 4px;
 }
 
 .main-right {
@@ -193,9 +194,6 @@ button .fa-search:hover {
 
 .main-left {
   width: 65.666%;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
   background: center url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Cornavirus-796x418.jpg") no-repeat;
   background-size: 100% 80%;
   position: relative;
@@ -212,7 +210,7 @@ button .fa-search:hover {
   bottom: 0;
   height: 80%;
   position: relative;
-  top: -9.4%;
+  top: 3px;
 }
 
 .main-left-header {
