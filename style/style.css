@@ -86,7 +86,7 @@ html {
 
 .top-nav {
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   justify-content: space-between;
   background-color: #131313;
   padding: 5px 15px;
@@ -107,4 +107,76 @@ html {
 .top-list-right li {
   display: inline;
   padding: 0 5px;
+}
+
+.bottom-nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+ 
+  background-color: white;
+}
+
+.bottom-nav ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.bottom-nav ul li {
+  display: inline;
+  padding: 10px 20px 10px 0;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: rgb(170, 170, 170);
+  font-size: 1.34rem;
+  font-weight: 500;
+  font-family: Shentox, sans-serif;
+}
+
+.bottom-nav a:hover {
+  color: black;
+}
+
+.bottom-container {
+  display: flex;
+  flex-flow: column wrap;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+ .bottom-container .banner {
+  background-color: rgb(255, 221, 51);
+  width: 100%;
+  height: 30px;
+  font-size: 1.4rem;
+  font-family: "Helvetica Neue", sans-serif;
+  padding: 4.4px 0 0 20px;
+  cursor: pointer;
+}
+
+button {
+  border-style: none;
+  border-left: 1px solid lightgray;
+  background-color: white;
+  padding: 14px 20px;
+  outline: none;
+}
+
+button:active {
+  background-color: whitesmoke;
+}
+
+button .fa-search { 
+  font-size: 1.8rem;
+  color: rgb(170, 170, 170);
+  cursor: pointer;
+}
+
+button .fa-search:hover {
+  color: black;
 }
