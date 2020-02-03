@@ -188,16 +188,19 @@ button .fa-search:hover {
   margin: 0 4px;
 }
 
-.main-right {
+.main-right-container {
   width: 33.333%;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .main-left {
   width: 65.666%;
   background: center url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Cornavirus-796x418.jpg") no-repeat;
-  background-size: 100% 80%;
+  background-size: 100% 100%;
   position: relative;
   background-position-y: 3%;
+  height: auto;
 }
 
 .cover-left {
@@ -226,4 +229,20 @@ button .fa-search:hover {
   top: 20px;
   left: auto;
   right: 9px;
+}
+
+.main-right-top {
+  background: center url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/Elon-Song-796x418.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  background-position-y: 3%;
+  height: 100%;
+}
+
+.main-right-bottom {
+  background: center url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/Facial-recognition-796x420.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  background-position-y: 3%;
+  height: 100%;
 }
