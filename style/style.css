@@ -617,8 +617,8 @@ button .fa-search:hover {
 }
 
 .art-middle img {
-  width: 96px;
-  height: 85px;
+  width: 28%;
+  height: auto;
 }
 
 .two-childs {
