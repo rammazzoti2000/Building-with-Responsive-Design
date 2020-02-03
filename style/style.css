@@ -326,4 +326,129 @@ button .fa-search:hover {
   line-height: 2;
   font-size: 1.25rem;
 }
+
+.funding {
+  width: 85%;
+  margin: 5px auto;
+}
+
+.funding-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.funding-header ul li  {
+  display: inline;
+}
+
+.funding-header h2 a {
+  color: rgb(255, 68, 34);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.funding-header ul li a {
+  color: rgb(255, 68, 34);
+  text-decoration: none; 
+}
  
+.funding-header ul li {
+  border-left: 1px solid rgb(255, 68, 34);
+  padding: 0 10px;
+  font-size: 1.8rem;
+}
+
+.funding-header ul li:first-child {
+  border-left: none;
+}
+
+.funding-container {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: space-between;
+}
+
+.funding-cards {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  width: 24%;
+  font-family: Avalon, sans-serif;
+  background-color: rgb(255, 68, 34);
+}
+
+.cards-top img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 10px;
+  left: 10px;
+}
+
+.cards-top {
+  width: 100%;
+}
+
+.card-p {
+  text-align: center;
+  height: 40px;
+}
+
+.card-p p {
+  color: white;
+  padding-top: 10px;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.card-ps {
+  text-align: center;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.8);7
+  
+}
+
+.card-ps p {
+  font-size: 1.3rem;
+  padding-top: 10px;
+  font-weight: 700;
+  padding-left: 15px;
+}
+
+.card-ps span {
+  color: gray;
+}
+
+.cards-middle {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px 0 15px 20px;
+  width: 100%;
+  border-bottom: 1px solid rgb(255, 68, 34);
+}
+
+.cards-middle a {
+  text-decoration: none;
+  color: gray;
+  font-size: 1.3rem;
+}
+
+.cards-bottom {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  font-size: 1.2rem;
+  line-height: 2;
+  padding: 15px;
+}
+
+.cards-bottom a {
+  text-decoration: none;
+  color: gray;
+}
+
+.cards-bottom span {
+  color: lightgray;
+}
