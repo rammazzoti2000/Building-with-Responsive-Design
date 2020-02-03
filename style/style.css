@@ -282,3 +282,48 @@ button .fa-search:hover {
 .main-header a:hover {
   color: white;
 }
+
+.latest-news {
+  width: 85%;
+  margin: 10% auto;
+}
+
+.latest-news-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  font-family: Avalon, sans-serif;
+}
+
+.news-img {
+  width: 24%;
+  margin-top: 20px;
+}
+
+.latest-news h2 a {
+  color: rgb(255, 68, 34);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.latest-news a {
+  text-decoration: none;
+}
+
+.latest-news h4 a {
+  color: black;
+  line-height: 1.2;
+  font-size: 1.6rem;
+}
+
+.news-img img {
+  margin-bottom: 5px;
+}
+
+.news-img p,
+.news-img a {
+  color: rgb(170, 170, 170);
+  line-height: 2;
+  font-size: 1.25rem;
+}
+ 
