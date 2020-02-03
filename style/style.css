@@ -185,7 +185,8 @@ button .fa-search:hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  margin: 0 4px;
+  margin: 5px 4px;
+  height: 500px;
 }
 
 .main-right-container {
@@ -199,7 +200,6 @@ button .fa-search:hover {
   background: center url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Cornavirus-796x418.jpg") no-repeat;
   background-size: 100% 100%;
   position: relative;
-  background-position-y: 3%;
   height: auto;
 }
 
@@ -211,9 +211,9 @@ button .fa-search:hover {
   padding: 10px;
   box-shadow: 0 0 50px black inset;
   bottom: 0;
-  height: 80%;
+  height: 100%;
   position: relative;
-  top: 3px;
+  top: 0;
 }
 
 .main-left-header {
@@ -221,7 +221,7 @@ button .fa-search:hover {
   top: auto;
   left: 13px;
   right: 23px;
-  bottom: 8%;
+  bottom: 3%;
 }
 
 .date-stamp {
@@ -229,20 +229,56 @@ button .fa-search:hover {
   top: 20px;
   left: auto;
   right: 9px;
+  color: white !important;
+  font-size: 1.5rem !important;
 }
 
 .main-right-top {
   background: center url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/Elon-Song-796x418.jpg") no-repeat;
   background-size: 100% 100%;
   position: relative;
-  background-position-y: 3%;
-  height: 100%;
+  height: 49.5%;
 }
 
 .main-right-bottom {
   background: center url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/Facial-recognition-796x420.jpg") no-repeat;
   background-size: 100% 100%;
   position: relative;
-  background-position-y: 3%;
-  height: 100%;
+  height: 49.5%;
+  top: 1%;
+}
+
+.main-right-header {
+  position: absolute;
+  bottom: 7px;
+  left: 10px;
+  right: auto;
+  top: auto;
+}
+
+.main-header h5 {
+  font-size: 1.5rem;
+}
+
+.main-header h1 {
+  font-size: 4rem;
+}
+
+.main-header h2 {
+  font-size: 2.2rem;
+}
+
+.main-header p {
+  font-size: 1.2em;
+  word-spacing: 2px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.main-header a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.main-header a:hover {
+  color: white;
 }
