@@ -35,7 +35,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  margin: 0 10px;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -77,4 +77,34 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Styling start */
+html {
+  font-size: 65%;
+}
+
+.top-nav {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  background-color: #131313;
+  padding: 5px 15px;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.top-nav a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 1.35rem;
+}
+
+.top-nav a:hover {
+  color: white;
+}
+
+.top-list-left li,
+.top-list-right li {
+  display: inline;
+  padding: 0 5px;
 }
