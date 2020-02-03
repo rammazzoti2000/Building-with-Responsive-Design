@@ -180,3 +180,52 @@ button .fa-search {
 button .fa-search:hover {
   color: black;
 }
+
+.main-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.main-right {
+  width: 33.333%;
+}
+
+.main-left {
+  width: 65.666%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  background: center url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Cornavirus-796x418.jpg") no-repeat;
+  background-size: 100% 80%;
+  position: relative;
+  background-position-y: 3%;
+}
+
+.cover-left {
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.6);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 0 50px black inset;
+  bottom: 0;
+  height: 80%;
+  position: relative;
+  top: -9.4%;
+}
+
+.main-left-header {
+  position: absolute;
+  top: auto;
+  left: 13px;
+  right: 23px;
+  bottom: 8%;
+}
+
+.date-stamp {
+  position: absolute;
+  top: 20px;
+  left: auto;
+  right: 9px;
+}
