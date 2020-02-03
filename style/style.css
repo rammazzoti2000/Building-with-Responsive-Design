@@ -147,6 +147,7 @@ html {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  z-index: 9898;
 }
 
  .bottom-container .banner {
@@ -179,4 +180,37 @@ button .fa-search {
 
 button .fa-search:hover {
   color: black;
+}
+
+.main-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+}
+
+.main-left {
+  width: 66%;
+}
+
+.main-right {
+  width: 30%;
+}
+
+.main-left-header  {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/Copy-of-Copy-of-Copy-of-Copy-of-...-2-1-796x417.png) no-repeat;
+  height: 470px;
+}
+
+.header {
+  position: absolute;
+  width: 63%;
+  bottom: 100px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.dayset {
+ float: right;
+ margin-right: 15px;
+ margin-top: 15px;
 }
