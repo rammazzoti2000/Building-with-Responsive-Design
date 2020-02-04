@@ -272,7 +272,7 @@ button .fa-search:hover {
 }
 
 .main-header h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .main-header p {
@@ -650,7 +650,7 @@ button .fa-search:hover {
 
 .deals-container {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   width: 100%;
 }
@@ -667,8 +667,8 @@ button .fa-search:hover {
 .deals-cards h4 > a {
   text-decoration: none;
   color: black;
-  font-size: 1.5rem;
-  line-height: 1.2;
+  font-size: 1.2rem;
+  line-height: 1;
 }
 
 .deals-cards h4 > a:hover {
@@ -853,7 +853,7 @@ footer {
   }
 
   .main-left-header h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .main-right-container {
@@ -888,12 +888,12 @@ footer {
   }
 
   .news-img a {
-    width: 14%;
+    width: 22%;
     margin-right: 10px;
   }
 
   .news-img img {
-    height: 97px;
+    height: 60px;
   }
 
   .news-img div p {
@@ -942,12 +942,12 @@ footer {
   }
 
   .art-top {
-    height: 400px;
+    height: 300px;
   }
 
   .art-middle img {
-    width: 16%;
-    height: 90px;
+    width: 20%;
+    height: 76px;
   }
 
   .deals-container {
@@ -970,8 +970,67 @@ footer {
   }
 
   .footer-bottom p {
-    width: 37%;
+    width: 58%;
     margin: 0 auto;
   }
 
+}
+
+@media only screen and (max-width: 500px) {
+  .main-left-header h1,
+  .main-right-header h2 {
+    font-size: 2rem;
+  }
+
+  .latest-news h4 a {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .latest-news p a,
+  .latest-news span {
+    font-size: 1.1rem;
+  }
+
+  .news-img a {
+    width: 22%;
+  }
+
+  .news-img img {
+    height: 60px;
+  }  
+
+  .art-top {
+    height: 300px;
+  }
+
+  .art-middle img {
+    width: 20%;
+    height: 76px;
+  }
+
+  .deals-cards a {
+    width: 22%;
+  }
+
+  .deals-cards img {
+    height: 60px;
+  }
+
+  .deals-cards h4 > a {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .deals-cards p {
+    font-size: 1.1rem;
+  }
+
+  .deals-cards span {
+    font-size: 1rem;
+  }
+
+  .footer-bottom p {
+    width: 58%;
+  }
 }
