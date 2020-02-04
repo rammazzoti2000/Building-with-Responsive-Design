@@ -194,6 +194,7 @@ button .fa-search:hover {
   width: 33.333%;
   display: flex;
   flex-flow: column wrap;
+  cursor: pointer;
 }
 
 .main-left {
@@ -202,6 +203,7 @@ button .fa-search:hover {
   background-size: 100% 100%;
   position: relative;
   height: auto;
+  cursor: pointer;
 }
 
 .cover-left {
@@ -215,6 +217,10 @@ button .fa-search:hover {
   height: 100%;
   position: relative;
   top: 0;
+}
+
+.cover-left:hover {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .main-left-header {
@@ -311,10 +317,19 @@ button .fa-search:hover {
   text-decoration: none;
 }
 
+.latest-news h2 a:hover {
+  color: black;
+}
+
 .latest-news h4 a {
   color: black;
   line-height: 1.2;
   font-size: 1.6rem;
+}
+
+.latest-news h4 a:hover {
+  color: rgb(255, 68, 34);
+  border-bottom: 1px solid rgba(255, 68, 34, 0.3);
 }
 
 .news-img img {
@@ -326,6 +341,10 @@ button .fa-search:hover {
   color: rgb(170, 170, 170);
   line-height: 2;
   font-size: 1.25rem;
+}
+
+.news-img p a:hover {
+  color: black;
 }
 
 .funding {
@@ -361,6 +380,10 @@ button .fa-search:hover {
   font-size: 1.8rem;
 }
 
+.funding-header a:hover {
+  color: black;
+}
+
 .funding-header ul li:first-child {
   border-left: none;
 }
@@ -392,6 +415,7 @@ button .fa-search:hover {
 
 .cards-top {
   width: 100%;
+  cursor: pointer;
 }
 
 .card-p {
@@ -435,6 +459,10 @@ button .fa-search:hover {
   text-decoration: none;
   color: gray;
   font-size: 1.3rem;
+}
+
+.cards-middle a:hover {
+  color: black;
 }
 
 .cards-bottom {
