@@ -753,7 +753,7 @@ footer {
   color: #aaa;
   font-size: 1.2rem;
   margin: auto;
-  width: 38%;
+  width: 40%;
 }
 
 .fa-heart {
@@ -1046,5 +1046,18 @@ footer {
 
   .footer-bottom p {
     width: 58%;
+  }
+
+  .top-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .art-middle img {
+    width: 27%;
+    height: auto;
   }
 }
