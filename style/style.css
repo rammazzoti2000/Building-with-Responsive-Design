@@ -459,11 +459,30 @@ button .fa-search:hover {
   margin: 100px auto;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .article-container {
   width: 30%;
+}
+
+.article-container h2 a {
+  text-decoration: none;
+  color: rgb(255, 68, 34);
+  font-size: 2.5rem;
+}
+
+.fa-chevron-right {
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+.article-container h2 a:hover {
+  color: black;
+}
+
+.art-content {
+  margin-top: 10px;
 }
 
 .art-top {
@@ -553,4 +572,22 @@ button .fa-search:hover {
   height: auto;
 }
 
+.art-bottom ul {
+  padding-left: 15px;
+}
 
+.art-bottom ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid lightgray;
+  color: rgb(255, 68, 34);
+  font-size: 1.3rem;
+}
+
+.art-bottom a {
+  text-decoration: none;
+  color: gray;
+}
+
+.art-bottom a:hover {
+  color: black;
+}
