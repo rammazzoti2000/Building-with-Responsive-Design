@@ -349,7 +349,7 @@ button .fa-search:hover {
 
 .funding {
   width: 85%;
-  margin: 5px auto;
+  margin: -15px auto 5px;
 }
 
 .funding-header {
@@ -770,4 +770,63 @@ footer {
 .footer-bottom img {
   display: inline-block;
   margin-bottom: -6px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-header {
+    height: 450px;
+  }
+
+  .latest-news {
+    width: 95%;
+  }
+
+  .news-img {
+    width: 32%;
+  }
+
+  .funding {
+    width: 95%;
+    margin: -15px auto 5px;
+  }
+
+  .funding-container .funding-cards:nth-child(4) {
+    display: none;
+  }
+
+  .funding-header {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .funding-header ul {
+    padding-left: 0;
+    margin-left: -8px;
+  }
+
+  .funding-cards {
+    width: 31%;
+  }
+
+  .articles {
+    width: 95%;
+  }
+
+  .article-container {
+    width: 48.5%;
+  }
+
+  .deals {
+    width: 95%;
+  }
+
+  .deals-cards {
+    width: 32%;
+  }
+
+  .deals-cards img {
+    width: 100%;
+  }
+
 }
