@@ -650,7 +650,7 @@ button .fa-search:hover {
 
 .deals-container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: space-between;
   width: 100%;
 }
@@ -949,4 +949,29 @@ footer {
     width: 16%;
     height: 90px;
   }
+
+  .deals-container {
+    flex-flow: column wrap;
+  }
+
+  .deals-cards {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .deals-cards a {
+    width: 14%;
+    margin-right: 10px;
+  }
+
+  .deals-cards img {
+    height: 97px;
+  }
+
+  .footer-bottom p {
+    width: 37%;
+    margin: 0 auto;
+  }
+
 }
