@@ -517,3 +517,40 @@ button .fa-search:hover {
   color: gray;
   
 }
+
+.art-middle {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 3px;
+  background-color: rgba(255, 68, 34, 0.1);
+}
+
+.art-middle div {
+  padding: 10px 10px 10px 10px;
+  color: rgb(255, 68, 34);
+  font-size: 1.3rem;
+}
+
+.art-middle h6 {
+  margin-top: 0;
+}
+
+.art-middle a {
+  text-decoration: none;
+  color: rgb(255, 68, 34);
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.art-middle a:hover {
+  border-bottom: 1px solid rgba(255, 68, 34, 0.3);
+}
+
+.art-middle img {
+  width: 25%;
+  height: auto;
+}
+
+
