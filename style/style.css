@@ -390,7 +390,7 @@ button .fa-search:hover {
 
 .funding-container {
   display: flex;
-  flex-direction: row wrap;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 
@@ -899,4 +899,39 @@ footer {
   .news-img div p {
     display: inline;
   }
+
+  .funding-header ul {
+    display: grid;
+  }
+
+  .funding-header ul li {
+    border-left: none;
+    font-size: 1.3rem;
+  }
+
+  .funding-cards {
+    flex-flow: column wrap;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .card-p,
+  .card-ps {
+    text-align: left;
+    padding-left: 90px;
+  }
+  
+  .card-ps p {
+    padding-left: 0;
+  }
+
+  .cards-bottom p a {
+    display: inline-flex;
+  }
+
+  .cards-bottom p span {
+    padding-left: 3px;
+  }
+
+
 }
