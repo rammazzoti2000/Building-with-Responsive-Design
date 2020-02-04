@@ -82,6 +82,7 @@ select {
 /* Styling start */
 html {
   font-size: 65%;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 .top-nav {
@@ -204,7 +205,7 @@ button .fa-search:hover {
 }
 
 .cover-left {
-  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.6);
   color: #f1f1f1;
   width: 100%;
@@ -466,24 +467,53 @@ button .fa-search:hover {
 }
 
 .art-top {
-  background: center url("../assets/articlesimage796x418.jpg") no-repeat;
+  background: center url("../assets/twitter.jpg") no-repeat;
   background-size: 100% 100%;
   position: relative;
   height: 250px;
 }
 
-.art-top div {
-  position: absolute;
-  color: white;
-  height: 30%;
-  width: 100%;
-  top: auto;
-  bottom: 0;
-  padding-bottom: 20px;
+.cover-img {
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+  background-size: 100% 100%;
+  height: 100%;
 }
 
-.art-top div a {
+.cover-text {
+  position: absolute;
+  top: auto;
+  bottom: 10px;
+  left: 10px;
+  right: 0;
+  color: white;
+}
+
+.cover-text p {
+  line-height: 2;
+}
+
+.cover-text h4 a:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cover-text a {
   text-decoration: none;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
+  line-height: 1.2;
+}
+
+.cover-text p > a {
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.cover-text p > a:hover {
+  color: white;
+}
+
+.cover-text span {
+  color: gray;
+  
 }
