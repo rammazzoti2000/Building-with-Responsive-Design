@@ -933,5 +933,20 @@ footer {
     padding-left: 3px;
   }
 
+  .articles {
+    flex-flow: column wrap;
+  }
 
+  .article-container {
+    width:100%;
+  }
+
+  .art-top {
+    height: 400px;
+  }
+
+  .art-middle img {
+    width: 16%;
+    height: 90px;
+  }
 }
