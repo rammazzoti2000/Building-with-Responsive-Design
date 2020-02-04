@@ -168,6 +168,11 @@ button {
   outline: none;
 }
 
+.fa-bars,
+.bottom-nav img {
+  display: none;
+}
+
 button:active {
   background-color: whitesmoke;
 }
@@ -839,6 +844,26 @@ footer {
 
   .bottom-nav {
     justify-content: flex-end;
+  }
+
+  .fa-bars,
+  .bottom-nav img {
+    display: inline-block;
+  }
+
+  .bottom-nav img {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  button {
+    border-right: 1px solid lightgray;
+  }
+
+  .fa-bars {
+    color: rgb(255, 68, 34);
+    font-size: 2.2rem;
+    margin: 0 15px;
   }
 
   .main-header {
