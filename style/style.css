@@ -875,4 +875,28 @@ footer {
     width: 100%;
     background-position-y: 33%;
   }
+
+  .latest-news-container {
+    flex-flow: column wrap;
+  }
+
+  .news-img {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .news-img a {
+    width: 14%;
+    margin-right: 10px;
+  }
+
+  .news-img img {
+    height: 97px;
+  }
+
+  .news-img div p {
+    display: inline;
+  }
 }
