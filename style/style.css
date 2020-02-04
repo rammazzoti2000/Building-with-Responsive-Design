@@ -591,3 +591,71 @@ button .fa-search:hover {
 .art-bottom a:hover {
   color: black;
 }
+
+.deals {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.deals-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 15px;
+}
+
+.deals-header a {
+  text-decoration: none;
+  color: rgb(255, 68, 34);
+  font-size: 2.5rem;
+}
+
+.deals-header p a {
+  font-size: 1.5rem;
+}
+
+.deals-header a:hover {
+  color: black;
+}
+
+
+.deals-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.deals-cards  {
+  margin-bottom: 30px;
+  width: 22%;
+}
+
+.deals-cards h4 {
+  padding-top: 8px;
+}
+
+.deals-cards h4 > a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.deals-cards h4 > a:hover {
+  color: rgb(255, 68, 34);
+  border-bottom: 1px solid rgba(255, 68, 34, 0.3);
+}
+
+.deals-cards p {
+  color: gray;
+  font-size: 1.6rem;
+  padding-top: 8px;
+}
+
+.deals-cards span {
+  font-size: 1.4rem;
+  color: lightgray;
+  text-decoration: line-through;
+}
