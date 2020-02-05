@@ -986,7 +986,7 @@ footer {
   }
 
   .deals-cards img {
-    height: 97px;
+    height: auto;
   }
 }
 
