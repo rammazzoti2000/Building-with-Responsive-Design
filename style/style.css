@@ -1,0 +1,1063 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Styling start */
+html {
+  font-size: 65%;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.top-nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: #131313;
+  padding: 5px 15px;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.top-nav a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 1.35rem;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: rgb(170, 170, 170);
+  font-size: 1.34rem;
+  font-weight: 500;
+  font-family: Shentox, sans-serif;
+}
+
+.main-header a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.latest-news a {
+  text-decoration: none;
+}
+
+.news-img a {
+  color: rgb(170, 170, 170);
+  line-height: 2;
+  font-size: 1.25rem;
+}
+
+.cards-middle a {
+  text-decoration: none;
+  color: gray;
+  font-size: 1.3rem;
+}
+
+.cards-bottom a {
+  text-decoration: none;
+  color: gray;
+}
+
+.cover-text a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+  line-height: 1.2;
+}
+
+.art-middle a {
+  text-decoration: none;
+  color: rgb(255, 68, 34);
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.art-bottom a {
+  text-decoration: none;
+  color: gray;
+}
+
+.deals-header a {
+  text-decoration: none;
+  color: rgb(255, 68, 34);
+  font-size: 2.5rem;
+}
+
+.top-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  background-color: #333;
+  border: 2px solid #333;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.bottom-list a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #aaa;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.latest-news h2 a {
+  color: rgb(255, 68, 34);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.latest-news h4 a {
+  color: black;
+  line-height: 1.2;
+  font-size: 1.6rem;
+}
+
+.news-img p {
+  color: rgb(170, 170, 170);
+  line-height: 2;
+  font-size: 1.25rem;
+}
+
+.funding-header h2 a {
+  color: rgb(255, 68, 34);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.article-container h2 a {
+  text-decoration: none;
+  color: rgb(255, 68, 34);
+  font-size: 2.5rem;
+}
+
+.cover-text p > a {
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.deals-header p a {
+  font-size: 1.5rem;
+}
+
+.deals-cards h4 > a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.funding-header ul li a {
+  color: rgb(255, 68, 34);
+  text-decoration: none;
+}
+
+.art-middle a:hover {
+  border-bottom: 1px solid rgba(255, 68, 34, 0.3);
+}
+
+.top-nav a:hover {
+  color: white;
+}
+
+.top-list-left li,
+.top-list-right li {
+  display: inline;
+  padding: 0 5px;
+}
+
+.bottom-nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  background-color: white;
+}
+
+.bottom-nav ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.bottom-nav ul li {
+  display: inline;
+  padding: 10px 20px 10px 0;
+}
+
+.bottom-nav a:hover {
+  color: black;
+}
+
+.bottom-container {
+  display: flex;
+  flex-flow: column wrap;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.bottom-container .banner {
+  background-color: rgb(255, 221, 51);
+  width: 100%;
+  height: 30px;
+  font-size: 1.4rem;
+  font-family: "Helvetica Neue", sans-serif;
+  padding: 4.4px 0 0 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+button {
+  border-style: none;
+  border-left: 1px solid lightgray;
+  background-color: white;
+  padding: 14px 20px;
+  outline: none;
+}
+
+.fa-bars,
+.bottom-nav img {
+  display: none;
+}
+
+button:active {
+  background-color: whitesmoke;
+}
+
+button .fa-search {
+  font-size: 1.8rem;
+  color: rgb(170, 170, 170);
+  cursor: pointer;
+}
+
+button .fa-search:hover {
+  color: black;
+}
+
+.main-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 5px 4px;
+  height: 500px;
+}
+
+.main-right-container {
+  width: 33.333%;
+  display: flex;
+  flex-flow: column wrap;
+  cursor: pointer;
+}
+
+.main-left {
+  width: 65.666%;
+  background: center url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Cornavirus-796x418.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  height: auto;
+  cursor: pointer;
+}
+
+.cover-left {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.6);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 0 50px black inset;
+  bottom: 0;
+  height: 100%;
+  position: relative;
+  top: 0;
+}
+
+.cover-left:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.main-left-header {
+  position: absolute;
+  top: auto;
+  left: 13px;
+  right: 23px;
+  bottom: 3%;
+}
+
+.date-stamp {
+  position: absolute;
+  top: 20px;
+  left: auto;
+  right: 9px;
+  color: white !important;
+  font-size: 1.5rem !important;
+}
+
+.main-right-top {
+  background: center url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/Elon-Song-796x418.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  height: 49.5%;
+}
+
+.main-right-bottom {
+  background: center url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/Facial-recognition-796x420.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  height: 49.5%;
+  top: 1%;
+}
+
+.main-right-header {
+  position: absolute;
+  bottom: 7px;
+  left: 10px;
+  right: auto;
+  top: auto;
+}
+
+.main-header h5 {
+  font-size: 1.5rem;
+}
+
+.main-header h1 {
+  font-size: 4rem;
+}
+
+.main-header h2 {
+  font-size: 2rem;
+}
+
+.main-header p {
+  font-size: 1.2em;
+  word-spacing: 2px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.main-header a:hover {
+  color: white;
+}
+
+.latest-news {
+  width: 85%;
+  margin: 10% auto;
+}
+
+.latest-news-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  font-family: Avalon, sans-serif;
+}
+
+.news-img {
+  width: 24%;
+  margin-top: 20px;
+}
+
+.funding-header a:hover {
+  color: black;
+}
+
+.cards-middle a:hover {
+  color: black;
+}
+
+.art-bottom a:hover {
+  color: black;
+}
+
+.deals-header a:hover {
+  color: black;
+}
+
+.top-list a:hover {
+  background-color: black;
+}
+
+.bottom-list a:hover {
+  color: white;
+}
+
+.latest-news h2 a:hover {
+  color: black;
+}
+
+.latest-news h4 a:hover {
+  color: rgb(255, 68, 34);
+  border-bottom: 1px solid rgba(255, 68, 34, 0.3);
+}
+
+.news-img img {
+  margin-bottom: 5px;
+}
+
+.news-img p a:hover {
+  color: black;
+}
+
+.funding {
+  width: 85%;
+  margin: -15px auto 5px;
+}
+
+.funding-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.funding-header ul li {
+  display: inline;
+  border-left: 1px solid rgb(255, 68, 34);
+  padding: 0 10px;
+  font-size: 1.8rem;
+}
+
+.art-bottom ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid lightgray;
+  color: rgb(255, 68, 34);
+  font-size: 1.3rem;
+}
+
+.footer-top ul li {
+  display: inline;
+  padding: 8px;
+}
+
+.funding-header ul li:first-child {
+  border-left: none;
+}
+
+.funding-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.funding-cards {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  width: 24%;
+  font-family: Avalon, sans-serif;
+  background-color: rgb(255, 68, 34);
+}
+
+.cards-top img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 10px;
+  left: 10px;
+}
+
+.cards-top {
+  width: 100%;
+  cursor: pointer;
+}
+
+.card-p {
+  text-align: center;
+  height: 40px;
+}
+
+.card-p p {
+  color: white;
+  padding-top: 10px;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.card-ps {
+  text-align: center;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card-ps p {
+  font-size: 1.3rem;
+  padding-top: 10px;
+  font-weight: 700;
+  padding-left: 15px;
+}
+
+.card-ps span {
+  color: gray;
+}
+
+.cards-middle {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px 0 15px 20px;
+  width: 100%;
+  border-bottom: 1px solid rgb(255, 68, 34);
+}
+
+.cards-bottom {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  font-size: 1.2rem;
+  line-height: 2;
+  padding: 15px;
+}
+
+.cards-bottom span {
+  color: lightgray;
+}
+
+.articles {
+  width: 85%;
+  margin: 100px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.article-container {
+  width: 30%;
+}
+
+.fa-chevron-right {
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+.article-container h2 a:hover {
+  color: black;
+}
+
+.art-content {
+  margin-top: 10px;
+}
+
+.art-top {
+  background: center url("../assets/twitter.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  height: 250px;
+}
+
+.cover-img {
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+  background-size: 100% 100%;
+  height: 100%;
+}
+
+.cover-text {
+  position: absolute;
+  top: auto;
+  bottom: 10px;
+  left: 10px;
+  right: 0;
+  color: white;
+}
+
+.cover-text p {
+  line-height: 2;
+}
+
+.cover-text h4 a:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cover-text p > a:hover {
+  color: white;
+}
+
+.cover-text span {
+  color: gray;
+}
+
+.art-middle {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 3px;
+  background-color: rgba(255, 68, 34, 0.1);
+}
+
+.art-middle div {
+  padding: 10px 10px 10px 10px;
+  color: rgb(255, 68, 34);
+  font-size: 1.3rem;
+}
+
+.art-middle h6 {
+  margin-top: 0;
+}
+
+.art-middle img {
+  width: 25%;
+  height: auto;
+}
+
+.art-bottom ul {
+  padding-left: 15px;
+}
+
+.deals {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.deals-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 15px;
+}
+
+.deals-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.deals-cards {
+  margin-bottom: 30px;
+  width: 22%;
+}
+
+.deals-cards h4 {
+  padding-top: 8px;
+}
+
+.deals-cards h4 > a:hover {
+  color: rgb(255, 68, 34);
+  border-bottom: 1px solid rgba(255, 68, 34, 0.3);
+}
+
+.deals-cards p {
+  color: gray;
+  font-size: 1.6rem;
+  padding-top: 8px;
+}
+
+.deals-cards span {
+  font-size: 1.4rem;
+  color: lightgray;
+  text-decoration: line-through;
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+}
+
+.footer-top {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(19, 19, 19);
+  height: 66%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bottom-list {
+  margin-top: 100px;
+}
+
+.footer-bottom {
+  display: flex;
+  width: 100%;
+  height: 34%;
+  background-color: black;
+  text-align: center;
+}
+
+.footer-bottom p {
+  position: relative;
+  color: #aaa;
+  font-size: 1.2rem;
+  margin: auto;
+  width: 40%;
+}
+
+.fa-heart {
+  color: red;
+}
+
+.footer-bottom span {
+  display: inline;
+}
+
+.footer-bottom img {
+  display: inline-block;
+  margin-bottom: -6px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-header {
+    height: 450px;
+  }
+
+  .latest-news {
+    width: 95%;
+  }
+
+  .news-img {
+    width: 32%;
+  }
+
+  .funding {
+    width: 95%;
+    margin: -15px auto 5px;
+  }
+
+  .funding-cards {
+    width: 31%;
+  }
+
+  .funding-container .funding-cards:nth-child(4) {
+    display: none;
+  }
+
+  .funding-header {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .funding-header ul {
+    padding-left: 0;
+    margin-left: -8px;
+  }
+
+  .articles {
+    width: 95%;
+  }
+
+  .article-container {
+    width: 48.5%;
+  }
+
+  .deals {
+    width: 95%;
+  }
+
+  .deals-cards {
+    width: 32%;
+  }
+
+  .deals-cards img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav,
+  .bottom-nav ul {
+    display: none;
+  }
+
+  .bottom-nav {
+    justify-content: flex-end;
+  }
+
+  .fa-bars,
+  .bottom-nav img {
+    display: inline-block;
+  }
+
+  .bottom-nav img {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  button {
+    border-right: 1px solid lightgray;
+  }
+
+  .fa-bars {
+    color: rgb(255, 68, 34);
+    font-size: 2.2rem;
+    margin: 0 15px;
+  }
+
+  .main-header {
+    flex-flow: column wrap;
+    margin: 0 8px;
+    height: 550px;
+  }
+
+  .main-left {
+    width: 100%;
+    height: 33.3%;
+  }
+
+  .main-left-header h1 {
+    font-size: 2rem;
+  }
+
+  .main-right-container {
+    width: 100%;
+    height: 65%;
+  }
+
+  .main-right-top {
+    height: 50%;
+    width: 100%;
+    background-position-y: 17%;
+    background-size: 100% 182%;
+  }
+
+  .main-right-bottom {
+    background-size: 100% 172%;
+    height: 50%;
+    top: 1.5%;
+    width: 100%;
+    background-position-y: 33%;
+  }
+
+  .latest-news-container {
+    flex-flow: column wrap;
+  }
+
+  .news-img {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .news-img a {
+    width: 15%;
+    margin-right: 10px;
+  }
+
+  .news-img img {
+    height: 60px;
+  }
+
+  .card-ps p {
+    padding-left: 0;
+  }
+
+  .footer-bottom p {
+    width: 58%;
+  }
+
+  .news-img div p {
+    display: inline;
+  }
+
+  .funding-header ul {
+    display: grid;
+  }
+
+  .funding-header ul li {
+    border-left: none;
+    font-size: 1.3rem;
+  }
+
+  .funding-cards {
+    flex-flow: column wrap;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .card-p,
+  .card-ps {
+    text-align: left;
+    padding-left: 90px;
+  }
+
+  .deals-cards a {
+    width: 14%;
+    margin-right: 10px;
+  }
+
+  .cards-bottom p a {
+    display: inline-flex;
+  }
+
+  .cards-bottom p span {
+    padding-left: 3px;
+  }
+
+  .articles {
+    flex-flow: column wrap;
+  }
+
+  .article-container {
+    width: 100%;
+  }
+
+  .art-top {
+    height: 300px;
+  }
+
+  .art-middle img {
+    width: 20%;
+    height: 76px;
+  }
+
+  .deals-container {
+    flex-flow: column wrap;
+  }
+
+  .deals-cards {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .deals-cards img {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main-left-header h1,
+  .main-right-header h2 {
+    font-size: 2rem;
+  }
+
+  .news-img a {
+    width: 22%;
+  }
+
+  .deals-cards a {
+    width: 22%;
+  }
+
+  .latest-news h4 a {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .latest-news p a,
+  .latest-news span {
+    font-size: 1.1rem;
+  }
+
+  .news-img img {
+    height: 60px;
+  }
+
+  .art-top {
+    height: 300px;
+  }
+
+  .art-middle img {
+    width: 20%;
+    height: 76px;
+  }
+
+  .deals-cards img {
+    height: 60px;
+  }
+
+  .deals-cards h4 > a {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .deals-cards p {
+    font-size: 1.1rem;
+  }
+
+  .deals-cards span {
+    font-size: 1rem;
+  }
+
+  .footer-bottom p {
+    width: 58%;
+  }
+
+  .top-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .art-middle img {
+    width: 27%;
+    height: auto;
+  }
+}
