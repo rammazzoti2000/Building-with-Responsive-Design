@@ -19,7 +19,11 @@ This is also part of the Odin project curriculum ["BUILDING WITH RESPONSIVE DESI
 ## Built With
 
 - Html,
-- CSS
+- CSS,
+- Linter,
+- Stickler,
+- Atom :atom:
+- Font-Awesome
 
 ## Live Demo
 
