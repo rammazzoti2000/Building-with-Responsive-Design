@@ -54,7 +54,7 @@ To have this app on your pc, you need to:
     
 ## Automated Test
 
-> There are no Automated Test for this project
+> There are no tests for this project
 
 ## Live Demo
 
