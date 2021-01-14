@@ -1,3 +1,9 @@
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+
+
 # Building-with-Responsive-Design
 
 > The Next Web responsive clone
@@ -14,7 +20,7 @@ Here are the objectives for this project:
 	* To achieve this we divided the page in different sections with articles within them
 * Align elements using float and flex
 
-This is also part of the Odin project curriculum ["BUILDING WITH RESPONSIVE DESIGN"](https://www.theodinproject.com/courses/html5-and-css3/lessons/building-with-responsive-design)
+This is also part of the Odin project curriculum ["Building with Responsive Design"](https://www.theodinproject.com/courses/html5-and-css3/lessons/building-with-responsive-design)
 
 ## Built With
 
@@ -25,24 +31,34 @@ This is also part of the Odin project curriculum ["BUILDING WITH RESPONSIVE DESI
 - Atom :atom:
 - Font-Awesome
 
+## Usage
+
+To have this app on your pc, you need to:
+* [download](https://github.com/rammazzoti2000/Building-with-Responsive-Design/archive/master.zip) or clone this repo:
+  - Clone with SSH:
+  ```
+    git@github.com:rammazzoti2000/Building-with-Responsive-Design.git
+  ```
+  - Clone with HTTPS
+  ```
+    https://github.com/rammazzoti2000/Building-with-Responsive-Design.git
+  ```
+
+* Change the working directory and run it in the browser:
+
+  - `$ cd /path/to/working/directory` - changes the directory to the project folder
+
+  - open it in a browser:
+      - `double click` the `index.html` file to open it in the browser, or
+      - `right click` the `index.html`, select `open with` and choose a browser of your choice
+    
+## Automated Test
+
+> There are no Automated Test for this project
+
 ## Live Demo
 
 [Live Demo Link](https://rawcdn.githack.com/rammazzoti2000/Building-with-Responsive-Design/e42e9bd30aa0a767f84ce18a5b968b63ebad59a9/index.html)
-
-## Usage
-
-To use it locally [download](https://github.com/rammazzoti2000/Building-with-Responsive-Design/archive/master.zip) or clone this project with the following command on a terminal:
-
-```git clone https://github.com/rammazzoti2000/Building-with-Responsive-Design.git```
-
-After that, cd to the responsive-design folder and open the index.html file in your browser, play with the screen sizes to see how it changes responsiveness
-
-![screenshot](assets/responsive-mockup.png)
-
-## Automated Test
-
-> There are no Automated Test for this project yet
-
 
 ## Authors
 
@@ -74,7 +90,17 @@ Give a :star: if you like this project!
 * [Microverse](https://www.microverse.org/)
 * [The Odin Project](https://www.theodinproject.com/)
 
-## 📝 License
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/rammazzoti2000/Building-with-Responsive-Design.svg?styles/default/yes.svg
+[contributors-url]: https://github.com/rammazzoti2000/Building-with-Responsive-Design/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/rammazzoti2000/Building-with-Responsive-Design.svg?styles/default/yes.svg
+[forks-url]: https://github.com/rammazzoti2000/Building-with-Responsive-Design/network/members
+[stars-shield]: https://img.shields.io/github/stars/rammazzoti2000/Building-with-Responsive-Design.svg?styles/default/yes.svg
+[stars-url]: https://github.com/rammazzoti2000/Building-with-Responsive-Design/stargazers
+[issues-shield]: https://img.shields.io/github/issues/rammazzoti2000/Building-with-Responsive-Design.svg?styles/default/yes.svg
+[issues-url]: https://github.com/rammazzoti2000/Building-with-Responsive-Design/issues
 
+## 📝 License
 This project is [MIT](https://opensource.org/licenses/MIT) licensed.
 
